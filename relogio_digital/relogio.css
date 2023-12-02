@@ -1,0 +1,84 @@
+@import url('https://fonts.cdnfonts.com/css/ds-digital');
+
+* {
+    font-family: 'DS-Digital', sans-serif;
+}
+
+body {
+    background-color: #181515;
+    overflow-y: hidden;
+}
+
+.relogio_centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.relogio_block{
+    width: 400px;
+    height: 300px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.relogio_dia{
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.relogio_hora{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.relogio_hora h2 {
+    color: #fff;
+    font-size: 110px;
+    margin: 0 6px;
+}
+
+.hora, .minuto, .segundos {
+    background-color: #33393f;
+    border-radius: 12px;
+    width: 194px;
+    height: 202px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width : 702px){
+    .hora, .minuto, .segundos{
+        width: 125px;
+        height: 120px;
+    }
+
+    .relogio_dia{
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 495px){
+    .relogio_dia{
+        margin-right: 35px;
+    }
+    .relogio_hora h2{
+        font-size: 70px;
+    }
+    
+    .hora, .minuto, .segundos {
+        width: 78px;
+        height: 88px;
+    }
+
+    .relogio_dia{
+        font-size: 22px;
+    }
+}
